@@ -1,0 +1,18 @@
+.product-container ul {
+  list-style-type: disc;
+}
+.shop-container {
+  display: flex;
+}
+.product-container {
+  width: 60%;
+  margin-left: 20px;
+  margin-left: 5px;
+  border-right: 1px solid rgb(255, 20, 20);
+}
+
+.card-container {
+  width: 30%;
+  text-align: center;
+  color: rgb(94, 121, 121);
+}
