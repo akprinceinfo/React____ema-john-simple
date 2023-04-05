@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import fakeData from '../../fakeData/posts';
 import Product from '../Product/Product';
+import Cart from '../Cart/Cart';
 import "../Shop/Shop.css";
 import "./Shop"
 
@@ -13,7 +14,7 @@ const Shop = () => {
      const [cart, setCart] = useState([]);
  
      const handleAddProduct = (product)=>{
-       console.log("product",product);
+      //  console.log("product",product);
        const newCart = [...cart, product];
        setCart(newCart);
      }
@@ -32,8 +33,10 @@ const Shop = () => {
             </div>
 
             <div className='card-container'>
-              <h2> Card Container </h2>
-              <h5> cart Summary : {cart.length}</h5>
+              
+             <Cart cart={cart}></Cart>
+              
+              
             </div>
             
         </div>
