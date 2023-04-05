@@ -3,16 +3,18 @@
 }
 .shop-container {
   display: flex;
+  width: 90%;
+  margin: 0 auto;
 }
 .product-container {
-  width: 60%;
+  width: 80vw;
   margin-left: 20px;
   margin-left: 5px;
   border-right: 1px solid rgb(255, 20, 20);
 }
 
 .card-container {
-  width: 30%;
+  width: 20vw;
   text-align: center;
   color: rgb(94, 121, 121);
 }

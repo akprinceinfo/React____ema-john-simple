@@ -5,10 +5,11 @@ import Product from '../Product/Product';
 import "../Shop/Shop.css";
 import "./Shop"
 
+
 const Shop = () => {
 
-     const first10 = fakeData.slice(0,6);
-     const[products, setProuducts]  =  useState(first10);
+     const first6 = fakeData.slice(0,6);
+     const[products, setProuducts]  =  useState(first6);
  
  
      return (
