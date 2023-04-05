@@ -10,20 +10,30 @@ const Shop = () => {
 
      const first6 = fakeData.slice(0,6);
      const[products, setProuducts]  =  useState(first6);
+     const [cart, setCart] = useState([]);
  
+     const handleAddProduct = (product)=>{
+       console.log("product",product);
+       const newCart = [...cart, product];
+       setCart(newCart);
+     }
  
      return (
         <div className='shop-container'>
             <div className='product-container'>
         
               {
-                 products.map(pd => <Product productName={pd}></Product>)
+                 products.map(pd => <Product 
+                  handleAddProduct = {handleAddProduct}
+                  productNames={pd}
+                 ></Product>)
               }
                
             </div>
 
             <div className='card-container'>
               <h2> Card Container </h2>
+              <h5> cart Summary : {cart.length}</h5>
             </div>
             
         </div>
